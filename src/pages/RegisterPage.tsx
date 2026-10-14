@@ -19,24 +19,24 @@ export const RegisterPage: React.FC = () => {
   };
 
   return (
-    <div className="bg-slate-950 text-slate-100 min-h-screen py-16 flex items-center justify-center px-4">
-      <div className="max-w-md w-full bg-slate-900 border border-slate-800 rounded-3xl p-8 space-y-6 shadow-2xl">
+    <div className="bg-slate-50/70 text-slate-900 min-h-screen py-16 flex items-center justify-center px-4">
+      <div className="max-w-md w-full bg-white border border-slate-200/90 rounded-3xl p-8 space-y-6 shadow-xs">
         <div className="text-center space-y-2">
-          <Link to="/" className="inline-flex items-center space-x-2.5">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-electro-600 to-cyan-400 flex items-center justify-center">
-              <Zap className="w-6 h-6 text-white fill-white" />
+          <Link to="/" className="inline-flex items-center space-x-2">
+            <div className="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center shadow-md shadow-blue-600/20">
+              <Zap className="w-5 h-5 text-white fill-white" />
             </div>
-            <span className="text-2xl font-extrabold tracking-tight text-white">
-              Electro<span className="text-electro-400">Hub</span>
+            <span className="text-2xl font-black tracking-tight text-slate-900">
+              Electro<span className="text-blue-600">Hub</span>
             </span>
           </Link>
-          <h2 className="text-xl font-bold text-white">Daftar Akun Baru</h2>
-          <p className="text-xs text-slate-400">Nikmati kemudahan berbelanja produk elektronik resmi</p>
+          <h2 className="text-xl font-black text-slate-900">Daftar Akun Baru</h2>
+          <p className="text-xs text-slate-500">Nikmati kemudahan berbelanja produk elektronik bergaransi resmi</p>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-4 text-xs">
-          <div className="space-y-1">
-            <label className="font-semibold text-slate-400">Nama Lengkap *</label>
+          <div className="space-y-1.5">
+            <label className="font-semibold text-slate-700">Nama Lengkap *</label>
             <div className="relative">
               <input
                 type="text"
@@ -44,14 +44,14 @@ export const RegisterPage: React.FC = () => {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 placeholder="Budi Santoso"
-                className="w-full bg-slate-950 text-white rounded-xl pl-10 pr-4 py-3 border border-slate-800 focus:outline-none focus:border-electro-500"
+                className="w-full bg-slate-50 text-slate-900 rounded-xl pl-10 pr-4 py-2.5 border border-slate-200 focus:outline-none focus:border-blue-500"
               />
-              <User className="w-4 h-4 text-slate-500 absolute left-3.5 top-1/2 -translate-y-1/2" />
+              <User className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
             </div>
           </div>
 
-          <div className="space-y-1">
-            <label className="font-semibold text-slate-400">Alamat Email *</label>
+          <div className="space-y-1.5">
+            <label className="font-semibold text-slate-700">Alamat Email *</label>
             <div className="relative">
               <input
                 type="email"
@@ -59,14 +59,14 @@ export const RegisterPage: React.FC = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="nama@email.com"
-                className="w-full bg-slate-950 text-white rounded-xl pl-10 pr-4 py-3 border border-slate-800 focus:outline-none focus:border-electro-500"
+                className="w-full bg-slate-50 text-slate-900 rounded-xl pl-10 pr-4 py-2.5 border border-slate-200 focus:outline-none focus:border-blue-500"
               />
-              <Mail className="w-4 h-4 text-slate-500 absolute left-3.5 top-1/2 -translate-y-1/2" />
+              <Mail className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
             </div>
           </div>
 
-          <div className="space-y-1">
-            <label className="font-semibold text-slate-400">Nomor Telepon / WA *</label>
+          <div className="space-y-1.5">
+            <label className="font-semibold text-slate-700">Nomor Telepon / WhatsApp *</label>
             <div className="relative">
               <input
                 type="tel"
@@ -74,14 +74,14 @@ export const RegisterPage: React.FC = () => {
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
                 placeholder="08xxxxxxxxxx"
-                className="w-full bg-slate-950 text-white rounded-xl pl-10 pr-4 py-3 border border-slate-800 focus:outline-none focus:border-electro-500"
+                className="w-full bg-slate-50 text-slate-900 rounded-xl pl-10 pr-4 py-2.5 border border-slate-200 focus:outline-none focus:border-blue-500"
               />
-              <Phone className="w-4 h-4 text-slate-500 absolute left-3.5 top-1/2 -translate-y-1/2" />
+              <Phone className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
             </div>
           </div>
 
-          <div className="space-y-1">
-            <label className="font-semibold text-slate-400">Kata Sandi *</label>
+          <div className="space-y-1.5">
+            <label className="font-semibold text-slate-700">Kata Sandi *</label>
             <div className="relative">
               <input
                 type="password"
@@ -89,24 +89,24 @@ export const RegisterPage: React.FC = () => {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="Minimal 8 karakter"
-                className="w-full bg-slate-950 text-white rounded-xl pl-10 pr-4 py-3 border border-slate-800 focus:outline-none focus:border-electro-500"
+                className="w-full bg-slate-50 text-slate-900 rounded-xl pl-10 pr-4 py-2.5 border border-slate-200 focus:outline-none focus:border-blue-500"
               />
-              <Lock className="w-4 h-4 text-slate-500 absolute left-3.5 top-1/2 -translate-y-1/2" />
+              <Lock className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
             </div>
           </div>
 
           <button
             type="submit"
-            className="w-full bg-gradient-to-r from-electro-600 to-electro-500 hover:from-electro-500 hover:to-electro-400 text-white font-bold py-3.5 rounded-xl shadow-lg shadow-electro-600/30 flex items-center justify-center space-x-2 transition-all"
+            className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 rounded-xl shadow-md shadow-blue-600/20 flex items-center justify-center space-x-2 transition-all text-xs"
           >
             <UserPlus className="w-4 h-4" />
             <span>Buat Akun ElectroHub</span>
           </button>
         </form>
 
-        <div className="text-center text-xs text-slate-400 pt-2 border-t border-slate-800">
+        <div className="text-center text-xs text-slate-500 pt-2 border-t border-slate-100">
           Sudah memiliki akun?{' '}
-          <Link to="/login" className="font-bold text-electro-400 hover:underline">
+          <Link to="/login" className="font-bold text-blue-600 hover:underline">
             Masuk Di Sini
           </Link>
         </div>
